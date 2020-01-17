@@ -20,6 +20,7 @@ def find_the_cheese(items)
   cheese_types = ["cheddar", "gouda", "camembert"]
   match = items.reduce do |memo, item|
     if cheese_types.include?(item) then
+      puts "match found: #{item}"
       memo = item
     end
   end
