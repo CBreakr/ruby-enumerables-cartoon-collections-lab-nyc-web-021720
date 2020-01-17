@@ -22,7 +22,7 @@ def find_the_cheese(items)
     if cheese_types.include?(item) then
       puts "match found: #{item}"
       memo = item
-      break
+      break memo
     end
   end
   return match
