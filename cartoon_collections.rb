@@ -18,10 +18,9 @@ end
 
 def find_the_cheese(items)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  match = items.reduce do |memo, item|
+  items.reduce do |memo, item|
     if cheese_types.include?(item) then
       break item
     end
   end
-  return match
 end
