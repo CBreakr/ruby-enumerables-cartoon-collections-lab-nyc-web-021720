@@ -18,10 +18,10 @@ end
 
 def find_the_cheese(items)
   cheese_types = ["cheddar", "gouda", "camembert"]
-  items.each do |item|
+  items.reduce(nil) do |memo, item|
     if cheese_types.include?(item) then
-      return item
+      memo = item
+      break
     end
   end
-  return nil
 end
