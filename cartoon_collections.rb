@@ -23,6 +23,7 @@ def find_the_cheese(items)
       puts "match found: #{item}"
       memo = item
     end
+    memo = nil
   end
   return match
 end
