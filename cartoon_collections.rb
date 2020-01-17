@@ -21,7 +21,6 @@ def find_the_cheese(items)
   match = items.reduce do |memo, item|
     if cheese_types.include?(item) then
       memo = item
-      break
     end
   end
   return match
